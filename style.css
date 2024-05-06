@@ -1,0 +1,136 @@
+:root{
+    --background:#091921;
+    --text:#00fff1;
+    --background_low: rgba(9,25,35,0.8);
+}
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    font-family: 'courier new','Courier New', Courier, monospace;
+    text-align: center;
+    background: var(--background);
+
+}
+
+.container{
+    padding:10px;
+    min-height: 90vh;
+    margin:3vh auto;
+    box-shadow: inset 2px 2px 5px var(--text),
+        inset -2px -2px 5px var(--text);
+    border-radius: 7px;
+
+}
+
+.title{
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bolder;
+    opacity:0.9;
+    color:var(--text);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.drum{
+    width: 150px;
+    height: 150px;
+    font-size: 3rem;
+    background-color: var(--background);
+    color: var(--text);
+    font-weight: bold;
+    outline: none;
+    border: none;
+    box-shadow: inset 2px 2px 5px var(--background),
+    inset 2px -2px 5px;
+    border-radius: 15px;    
+    margin: 10px;
+}
+
+.w,
+.d,
+.l{
+    border-radius: 50%;
+
+}
+
+#volume_slider{
+    height: 7px;
+    width: 200px;
+    margin-left: 10px;
+    appearance: none;
+    background: var(--text);
+    outline: none;
+    border-radius: 7px;
+}
+
+.volume_control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#volume_slider::-webkit-slider-thumb{
+
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background: var(--text);
+    outline: none;
+    cursor:pointer
+}
+
+.fa{
+    color:var(--text);
+    box-shadow: inset 2px 2px 5px var(--text),
+    inset -2px -2px 5px var(--text);
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.util_button{
+    margin-top:40px;
+
+}
+
+.util_button >button{
+    height: 50px;
+    width: 200px;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: none;
+    background-color: var(--background);
+    color: var(--text);
+    box-shadow: inset 2px 2px 5px var(--text),
+    inset -2px -2px 5px var(--text);
+    margin: 10px 4px;
+
+} 
+
+#util_button-theme
+{
+color: var(--background);
+background-color: var(--text);
+}
+
+
+.pressed{
+    opacity: 0.5;
+    box-shadow: -1px -1px 3px var(--background) ;
+}
+
+.automusicon,
+.change_theme_pressed
+{
+    box-shadow: inset -1px, -1px 3px rgba(255, 255, 255, 0.1),
+    inset -2px -2px 5px rgba(0, 0, 0, 0.8) !important;
+}
+
