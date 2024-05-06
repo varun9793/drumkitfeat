@@ -32,10 +32,6 @@ const change_background = (image_src) => {
 }
 
 
-const bg_changer =document.getElementById("util_button-background")
-bg_changer.addEventListener("click",() =>{
-    api_call()
-})
 
 
 const animate=(key)=>{
